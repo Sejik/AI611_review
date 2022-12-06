@@ -1,4 +1,5 @@
-# AI611_review : 10 reviews and some simple reviews by sejik park
+# AI611_review : 10 reviews and some simple reviews
+sejik park
 
 ## Review 1 : Proximal Policy Optimization Algorithms
 Proximal policy optimization (PPO) is an on-policy algorithm which optimize clipped surrogate objective. It have some of benefits of trust region policy optimization (TRPO), which have the proof about monotonic improvement. Because PPO’s clip algorithm works as ignoring the change in probability ratio for the positive object and including it for the negative object. In other words, PPO removes the incentive for moving outside of the defined interval. This article test not only clipped algorithm but also adaptive KL penalty. But penalizing on KL divergence has worse performance than clipped method. Overall, PPO outperform over A2C, A2C with trust region, cross entropy method, vanilla policy gradient, and TRPO in the continuous control benchmark. For the discussion point, finding the optimal entropy coefficient without greedy search could be a point, and meta-optimization could be one way to solve this problem.
